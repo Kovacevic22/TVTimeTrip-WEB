@@ -1,0 +1,9 @@
+.default-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 1600px;
+  height: 1600px;
+  margin: 0 auto;
+}/*# sourceMappingURL=default-container.css.map */

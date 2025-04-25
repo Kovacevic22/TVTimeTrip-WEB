@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Press+Start+2P&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+.main-container {
+  background-color: #cce7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid #000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.main-container .tv-screen {
+  background-image: url("../Images/retro-tv-2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  position: relative;
+}
+.main-container .tv-screen .screen-content {
+  position: absolute;
+  background-color: #000000;
+  width: 414px;
+  height: 248px;
+  left: 50%;
+  top: 49%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 3px solid #0A0A0A;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.main-container .tv-screen .default-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .tv-screen .page0 {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.main-container .tv-screen .page1 {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+  background: url("../Images/80s-background.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main-container .tv-screen .page1 .disco-ball {
+  width: 100px;
+  height: 100px;
+}
+.main-container .tv-screen .page1 .laser {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  width: 4px;
+  height: 300px;
+  background: linear-gradient(to bottom, #0ff 0%, transparent 100%);
+  transform-origin: top center;
+  opacity: 0.8;
+  filter: blur(1px);
+  animation: laserPulse 1s infinite alternate;
+}
+.main-container .tv-screen .page1 .laser.laser1 {
+  left: 50%;
+  transform-origin: top center;
+  transform: translateX(-70%) rotate(-10deg);
+  animation: laserPulse1 1s infinite alternate;
+}
+.main-container .tv-screen .page1 .laser.laser2 {
+  left: 50%;
+  transform-origin: top center;
+  transform: translateX(-55%) rotate(-5deg);
+  animation: laserPulse2 1s infinite alternate;
+}
+.main-container .tv-screen .page1 .laser.laser3 {
+  left: 50%;
+  transform-origin: top center;
+  transform: translateX(-45%) rotate(5deg);
+  animation: laserPulse3 1s infinite alternate;
+}
+.main-container .tv-screen .page1 .laser.laser4 {
+  left: 50%;
+  transform-origin: top center;
+  transform: translateX(-30%) rotate(10deg);
+  animation: laserPulse4 1s infinite alternate;
+}
+.main-container .tv-screen .page1 .dance-floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+}
+.main-container .tv-screen .page1 .dance-man {
+  position: absolute;
+  left: 10px;
+  bottom: 0px;
+  width: 100px;
+}
+.main-container .tv-screen .page1 .dancers {
+  position: absolute;
+  right: 10px;
+  bottom: 0px;
+  width: 100px;
+}
+.main-container .tv-screen .page1 .music-logo-80s {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+@keyframes laserPulse1 {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(-25deg) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(-25deg) scaleY(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(-25deg) scaleY(1);
+  }
+}
+@keyframes laserPulse2 {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(-10deg) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(-10deg) scaleY(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(-10deg) scaleY(1);
+  }
+}
+@keyframes laserPulse3 {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(10deg) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(10deg) scaleY(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(10deg) scaleY(1);
+  }
+}
+@keyframes laserPulse4 {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(25deg) scaleY(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-50%) rotate(25deg) scaleY(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(25deg) scaleY(1);
+  }
+}
+.main-container .tv-screen .page2 {
+  display: none;
+  position: relative;
+  overflow: hidden;
+}
+.main-container .tv-screen .page2 .video-rap {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.main-container .tv-screen .page2 .music-logo-90s {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.main-container .tv-screen .page3 {
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+.main-container .tv-screen .page3 .video-house {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-container .tv-screen .page3 .music-logo-00s {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+.main-container .tv-screen #flicker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(rgba(255, 255, 255, 0.1) 0 2px, transparent 2px 4px), repeating-conic-gradient(rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.25) 2%, transparent 4%);
+  background-size: 40px 40px, 100% 100%;
+  opacity: 0.5;
+  animation: opacityPulse 1s infinite ease-in-out;
+  z-index: 10;
+  pointer-events: none;
+  display: none;
+}
+@keyframes opacityPulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+.main-container .remote {
+  background-image: url("../Images/remote.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+.main-container .remote .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  width: 20px;
+  height: 12px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+.main-container .remote #button1 {
+  top: 20px;
+  left: 57%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #FF3B30;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.main-container .remote #button1:hover {
+  background-color: #c51e15;
+}
+.main-container .remote #button2 {
+  top: 57px;
+  left: 39%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.main-container .remote #button2:hover {
+  background-color: #999999;
+}
+.main-container .remote #button3 {
+  top: 57px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.main-container .remote #button3:hover {
+  background-color: #999999;
+}
+.main-container .remote #button4 {
+  top: 57px;
+  left: 61%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.main-container .remote #button4:hover {
+  background-color: #999999;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  background-color: #b3e0d5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

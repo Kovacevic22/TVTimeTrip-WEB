@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SASS/style.css">
+    <title>TVTimeTrip</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="remote">
+        <div class="button" id="button1">X</div>
+        <div class="button" id="button2">1</div>
+        <div class="button" id="button3">2</div>
+        <div class="button" id="button4">3</div>
+    </div>
+    <div class="tv-screen">
+        <div class="screen-content">
+            <div class="default-page page0">
+               
+            </div>
+            <div class="default-page page1">
+                <img src="Images/80s Music.png" alt="" class="music-logo-80s">
+                <img src="Images/discoball.gif" alt="" class="disco-ball">
+                <div class="laser laser1"></div>
+                <div class="laser laser2"></div>
+                <div class="laser laser3"></div>
+                <div class="laser laser4"></div>
+                <img src="Images/dance-man.gif" alt="" class="dance-man">
+                <img src="Images/dancers.gif" alt="" class="dancers">
+            </div>
+            <div class="default-page page2">
+                <img src="Images/90s Music.png" alt="" class="music-logo-90s">
+                <video autoplay muted loop class="video-rap">
+                    <source src="Videos/9723914-hd_1440_1080_30fps.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="default-page page3">
+                <img src="Images/00s Music.png" alt="" class="music-logo-00s">
+                <video autoplay muted loop class="video-house">
+                    <source src="Videos/4124198-hd_1920_1080_24fps.mp4" type="video/mp4">
+                  </video>
+            </div>
+            <div class="flicker-effect" id="flicker"></div>
+        </div>
+    </div>
+  </div>
+  <audio id="audio80s" src="Music/80s-disco.mp3"></audio>
+  <audio id="audio90s" src="Music/90s-rap.mp3"></audio>
+  <audio id="audio00s" src="Music/2000s-house.mp3"></audio>
+  <audio id="staticSound" src="Music/tv-static-noise-291374.mp3"></audio>
+  <script src="JS/script.js"></script>
+</body>
+</html>
